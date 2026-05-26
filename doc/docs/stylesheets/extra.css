@@ -1,0 +1,51 @@
+/* Main colors */
+:root  > * {
+  --md-primary-fg-color:               #1C5484;
+  --md-primary-fg-color--light:        #1C5484;
+  --md-primary-fg-color--dark:         #1C5484;
+
+  --md-accent-fg-color:                #1C5484;
+  --md-accent-fg-color--transparent:   #1C5484;
+
+  --md-mermaid-label-fg-color: white;
+}
+
+/* Header and footer */
+[data-md-component="header"],.md-footer-meta,footer {
+color: #FFFFFF !important;
+       background-color: #014076;
+}
+
+.md-footer .md-footer-meta__inner div, .md-footer .md-footer-meta__inner a {
+color: #FFFFFF !important;
+       background-color: #014076;
+}
+
+footer, .md-footer {
+  background-color: #014076 !important;
+}
+
+/* Navigation */
+.md-tabs__item--active {
+  border-color: #1C5484;
+}
+
+/* Left navigation menu */
+a.md-nav__link.md-nav__link--active:not(.md-nav__link--passed) {
+  color: #FFFFFF !important;
+}
+
+/* Search box */
+[data-md-component="search"] button {
+color: #FFFFFF !important;
+       background-color: #1C5484;
+}
+
+.md-search__button::before {
+  background-color: white;
+}
+
+.md-search__button::after {
+color: #FFFFFF !important;
+       background-color: #132D45;
+}

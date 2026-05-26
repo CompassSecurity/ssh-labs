@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "2769f96d8e89e9cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "19aa249e39abe0b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f2376899955f348",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f71b4532f11df103",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ca1e8086d226c32",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b1eadda4fab369a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "994cbc47503c3deb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "41166eb48d7cebb7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 382.5
+  },
+  "right": {
+    "id": "83c256ee1ecddad8",
+    "type": "split",
+    "children": [
+      {
+        "id": "795b9958edd89880",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04b73d10e2479d30",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "doc/docs/labs.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for labs"
+            }
+          },
+          {
+            "id": "e71b587da7d560ec",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "289c158af31ec952",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "70ac7570cf478cd1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "7f2376899955f348",
+  "lastOpenFiles": [
+    "src/kali/Dockerfile~",
+    "README.md~",
+    "src/kali/srv/entrypoint~",
+    "src/kali/issue.net~",
+    "doc/docs/labs/02-getting-started.md",
+    "doc/docs/walk-through/08-accessing-linux-srv-03.md",
+    "compose.yml~",
+    "doc/docs/walk-through/07-ssh-password-sniffing.md",
+    "doc/docs/walk-through/06-accessing-linux-srv-02.md",
+    "doc/docs/walk-through/05-private-key-cracking.md",
+    "doc/docs/walk-through/04-accessing-linux-srv-01.md",
+    "doc/README.md",
+    "README.md",
+    "doc/docs/index.md",
+    "doc/docs/downloads/ssh_secure_shell_security_and_best_practices_2026-03-05.pdf",
+    "doc/docs/downloads",
+    "4913",
+    "doc/docs/labs/01-labs.md",
+    "doc/docs/about.md",
+    "doc/docs/walk-through/16-accessing-linux-srv-07.md",
+    "doc/docs/images/firework.svg",
+    "doc/docs/labs/03-hints.md",
+    "doc/docs/images/alice.svg",
+    "doc/docs/images/programmer.svg",
+    "doc/docs/images/signpost.svg",
+    "doc/docs/logo.svg",
+    "doc/docs/stylesheets/extra.css~",
+    "doc/zensical.toml~",
+    "doc/docs/images/lightbulb.svg",
+    "doc/docs/images/idea.svg",
+    "doc/docs/walk-through/00-walk-through.md",
+    "doc/docs/images/presentation.svg",
+    "doc/docs/images/whale.svg",
+    "doc/docs/images/introduction.svg",
+    "doc/docs/walk-through/01-service-discovery.md",
+    "doc/docs/images",
+    "doc/docs/walk-through/03-login-brute-force.md",
+    "doc/docs/walk-through/02-information-gathering.md",
+    "doc/docs/walk-through/09-abuse-ssh-user-ca.md",
+    "doc/docs/walk-through/15-abuse-leaked-otp-secret.md",
+    "doc/docs/walk-through/10-accessing-linux-srv-04.md",
+    "doc/docs/walk-through/14-accessing-linux-srv-06.md",
+    "doc/docs/walk-through/13-connection-multiplexing-hijacking.md",
+    "doc/docs/walk-through/12-accessing-linux-srv-05.md",
+    "doc/docs/walk-through/11-ssh-agent-hijacking.md",
+    "doc/docs/walk-through/16-get-the-final-flag.md"
+  ]
+}

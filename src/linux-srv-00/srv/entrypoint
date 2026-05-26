@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#echo "[*] Starting SSH server..."
+#/usr/sbin/sshd -E /var/log/sshd
+
+su - alice -c /srv/ssh-login-alice &
+su - carol -c /srv/ssh-agent-forwarding-carol &
+su - dave -c /srv/ssh-session-multiplexing-dave &
+
+tail -f /dev/null

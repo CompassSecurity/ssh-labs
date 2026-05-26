@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+echo "[*] Starting SSH agent and loading keys..."
+eval $(ssh-agent)
+ssh-add
+ssh-add -l
+
+while true
+do
+  echo "[*] Logging in as carol on linux-srv-04 and forwarding SSH agent..."
+  # -tt: force tty allocation, even if ssh has no local tty
+  ssh -A -tt linux-srv-04
+  sleep 5
+done

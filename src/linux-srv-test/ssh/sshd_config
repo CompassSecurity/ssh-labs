@@ -1,0 +1,16 @@
+#
+# /etc/ssh/sshd_config
+#
+
+# Authentication
+UsePAM yes
+PermitRootLogin no
+PasswordAuthentication yes
+KbdInteractiveAuthentication yes
+AuthenticationMethods password publickey
+
+# Features
+PrintMotd no
+PrintLastLog no
+Banner /etc/issue.net
+Subsystem  sftp  /usr/lib/openssh/sftp-server

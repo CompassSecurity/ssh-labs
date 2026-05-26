@@ -1,0 +1,19 @@
+#
+# /etc/ssh/sshd_config
+#
+
+# Authentication
+UsePAM yes
+PermitRootLogin no
+PasswordAuthentication yes
+KbdInteractiveAuthentication no
+AuthenticationMethods password publickey
+
+# Used to not block login brute-force attacks, simulates OpenSSH < 9.8
+PerSourcePenaltyExemptList 0.0.0.0/0
+
+# Features
+PrintMotd no
+PrintLastLog no
+Banner /etc/issue.net
+Subsystem  sftp  /usr/lib/openssh/sftp-server

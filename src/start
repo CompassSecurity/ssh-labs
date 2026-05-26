@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -x
+
+docker compose down
+docker compose build --parallel
+docker compose up
+docker compose down --remove-orphans

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+while true
+do
+  echo "[*] Logging in as alice on linux-srv-02..."
+  sshpass -v -p puffy-beastie-tux-23 ssh alice@linux-srv-02 'echo "[*] Login alice@linux-srv-02 successful." && sleep 10'
+  sleep 1
+done

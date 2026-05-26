@@ -1,0 +1,78 @@
+services:
+  kali:
+    hostname: kali
+    image: ghcr.io/compasssecurity/kali:stable
+    networks:
+      linux-lab:
+        ipv4_address: 10.5.23.5
+    ports:
+      - "127.0.0.1:2222:22"
+    cap_add:
+      - NET_ADMIN # nmap
+
+  linux-srv-00:
+    hostname: linux-srv-00.nullbyte.internal
+    image: ghcr.io/compasssecurity/linux-srv-00:stable
+    networks:
+      linux-lab:
+        ipv4_address: 10.5.23.10
+
+  linux-srv-01:
+    hostname: linux-srv-01.nullbyte.internal
+    image: ghcr.io/compasssecurity/linux-srv-01:stable
+    networks:
+      linux-lab:
+        ipv4_address: 10.5.23.11
+
+  linux-srv-02:
+    hostname: linux-srv-02.nullbyte.internal
+    image: ghcr.io/compasssecurity/linux-srv-02:stable
+    networks:
+      linux-lab:
+        ipv4_address: 10.5.23.12
+    cap_add:
+      - SYS_PTRACE # strace
+
+  linux-srv-03:
+    hostname: linux-srv-03.nullbyte.internal
+    image: ghcr.io/compasssecurity/linux-srv-03:stable
+    networks:
+      linux-lab:
+        ipv4_address: 10.5.23.13
+
+  linux-srv-04:
+    hostname: linux-srv-04.nullbyte.internal
+    image: ghcr.io/compasssecurity/linux-srv-04:stable
+    networks:
+      linux-lab:
+        ipv4_address: 10.5.23.14
+
+  linux-srv-05:
+    hostname: linux-srv-05.nullbyte.internal
+    image: ghcr.io/compasssecurity/linux-srv-05:stable
+    networks:
+      linux-lab:
+        ipv4_address: 10.5.23.15
+
+  linux-srv-06:
+    hostname: linux-srv-06.nullbyte.internal
+    image: ghcr.io/compasssecurity/linux-srv-06:stable
+    networks:
+      linux-lab:
+        ipv4_address: 10.5.23.16
+
+  linux-srv-07:
+    hostname: linux-srv-07.nullbyte.internal
+    image: ghcr.io/compasssecurity/linux-srv-07:stable
+    networks:
+      linux-lab:
+        ipv4_address: 10.5.23.17
+
+networks:
+  linux-lab:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.5.23.0/24
+          gateway: 10.5.23.1

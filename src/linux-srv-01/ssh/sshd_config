@@ -1,0 +1,19 @@
+#
+# /etc/ssh/sshd_config
+#
+
+# Authentication
+UsePAM yes
+PermitRootLogin no
+PasswordAuthentication yes
+KbdInteractiveAuthentication no
+AuthenticationMethods password publickey
+
+# Disable brute-force protection for challenge to simulate older OpenSSH versions
+PerSourcePenaltyExemptList 10.5.23.0/24
+
+# Features
+PrintMotd no
+PrintLastLog no
+Banner /etc/issue.net
+Subsystem  sftp  /usr/lib/openssh/sftp-server

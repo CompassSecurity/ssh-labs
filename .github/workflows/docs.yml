@@ -1,0 +1,45 @@
+name: Build and Publish Documentation
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - v*.*.*
+    paths:
+      - 'doc/**'
+      - '.github/workflows/**'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: doc
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: pip install zensical
+      - run: zensical build --clean
+      - run: |
+          pwd
+          ls -la
+          find . -maxdepth 5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: doc/site
+      - uses: actions/deploy-pages@v4
+        id: deployment

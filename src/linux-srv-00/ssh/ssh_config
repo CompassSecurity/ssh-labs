@@ -1,0 +1,9 @@
+#
+# /etc/ssh/ssh_config
+#
+
+Host *
+    SendEnv LANG LC_*
+    CheckHostIP no
+    HashKnownHosts no
+    GSSAPIAuthentication yes

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "[*] Starting SSH server..."
+/usr/sbin/sshd -E /var/log/sshd
+
+tail -f /dev/null

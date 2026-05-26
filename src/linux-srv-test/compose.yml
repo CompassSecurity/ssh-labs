@@ -1,0 +1,29 @@
+services:
+  kali:
+    hostname: kali
+    build: ../kali
+    networks:
+      linux-lab-test:
+        ipv4_address: 10.23.23.5
+    ports:
+      - "127.0.0.1:2222:22"
+    cap_add:
+      - NET_ADMIN # nmap
+
+  linux-srv-test:
+    hostname: linux-srv-test
+    build: .
+    networks:
+      linux-lab-test:
+        ipv4_address: 10.23.23.10
+    ports:
+      - "127.0.0.1:2223:22"
+
+networks:
+  linux-lab-test:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.23.23.0/24
+          gateway: 10.23.23.1

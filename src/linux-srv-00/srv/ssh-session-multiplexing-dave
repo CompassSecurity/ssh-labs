@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+while true
+do
+  echo "[*] Logging in as dave on linux-srv-06 using MFA via linux-srv-06..."
+  # -tt: force tty allocation, even if ssh has no local tty
+  ssh dave@linux-srv-05 'sshpass -v -P "Verification code:" -p "$(oathtool -b --totp X75JW7NA75KLBPO2CREYFK3FNI)" -- ssh -tt linux-srv-06'
+  sleep 5
+done

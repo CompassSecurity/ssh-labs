@@ -1,0 +1,119 @@
+[project]
+site_name = "SSH Labs"
+site_url = "http://sshlabs.compass-security.training"
+site_description = "Labs to learn about SSH security."
+site_author = "Emanuel Duss, Compass Security"
+repo_url = "https://github.com/CompassSecurity/ssh-labs/"
+repo_name = "CompassSecurity/ssh-labs"
+copyright = "Created 2026 by Emanuel Duss, <a href='https://www.compass-security.com'>Compass Security</a>"
+extra_css = ["stylesheets/extra.css"]
+
+nav = [
+  {"Home" = "index.md"},
+  {"Labs" = [
+    "labs/01-labs.md",
+    "labs/02-getting-started.md",
+    "labs/03-hints.md"
+  ]},
+  {"Walk-Through" = [
+    "walk-through/00-walk-through.md",
+    "walk-through/01-service-discovery.md",
+    "walk-through/02-information-gathering.md",
+    "walk-through/03-login-brute-force.md",
+    "walk-through/04-accessing-linux-srv-01.md",
+    "walk-through/05-private-key-cracking.md",
+    "walk-through/06-accessing-linux-srv-02.md",
+    "walk-through/07-ssh-password-sniffing.md",
+    "walk-through/08-accessing-linux-srv-03.md",
+    "walk-through/09-abuse-ssh-user-ca.md",
+    "walk-through/10-accessing-linux-srv-04.md",
+    "walk-through/11-ssh-agent-hijacking.md",
+    "walk-through/12-accessing-linux-srv-05.md",
+    "walk-through/13-connection-multiplexing-hijacking.md",
+    "walk-through/14-accessing-linux-srv-06.md",
+    "walk-through/15-abuse-leaked-otp-secret.md",
+    "walk-through/16-accessing-linux-srv-07.md"
+   ]},
+  {"About" = "about.md"},
+]
+
+[project.theme]
+logo = "images/terminal.svg"
+favicon = "images/pufferfish.svg"
+#font = false
+font.text = "Noto Sans"
+font.code = "Fira Code"
+#primary = "custom"
+features = [
+    "navigation.tabs",
+    "navigation.instant.progress",    # Show loading progress bar
+    "navigation.instant",             # Like an SPA, without page reloads
+    "navigation.instant.prefetch",    # Prefetch page when link hovering
+    "navigation.tracking",            # Update URL with anchor
+    "navigation.footer",              # Show previous and next navigation links
+    "navigation.indexes",             # Use index page for sections
+]
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+# Palette toggle for automatic mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+#primary = "custom"
+#accent = "custom"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+#primary = "custom"
+#accent = "custom"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+#primary = "custom"
+#accent = "custom"
+
+[[project.extra.social]]
+name = "Compass Security on Bluesky"
+icon = "fontawesome/brands/bluesky"
+link = "https://bsky.app/profile/compass-security"
+[[project.extra.social]]
+name = "Compass Security on X"
+icon = "fontawesome/brands/x-twitter"
+link = "https://x.com/compasssecurity"
+[[project.extra.social]]
+name = "Compass Security on GitHub"
+icon = "fontawesome/brands/github"
+link = "https://github.com/CompassSecurity"
+[[project.extra.social]]
+name = "Compass Security on LinkedIn"
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/company/compass-security-ag/"
+
+[project.plugins.offline]
+
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.md_in_html]
+
+#[project.markdown_extensions.pymdownx.highlight]
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+
+[project.markdown_extensions.pymdownx.blocks.caption]
+
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
