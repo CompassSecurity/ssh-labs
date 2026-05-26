@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - main
-    tags:
-      - v*.*.*
     paths:
       - 'doc/**'
       - '.github/workflows/**'
@@ -34,10 +32,6 @@ jobs:
           python-version: 3.x
       - run: pip install zensical
       - run: zensical build --clean
-      - run: |
-          pwd
-          ls -la
-          find . -maxdepth 5
       - uses: actions/upload-pages-artifact@v4
         with:
           path: doc/site
