@@ -38,3 +38,8 @@ Let’s get started and uncover the inner workings of SSH security!
 Visit the SSH labs website to get started:
 https://sshlabs.compass-security.training.
 
+## License
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)).
+
+![CC BY-SA](./doc/docs/images/cc-by-sa.png)
