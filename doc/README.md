@@ -4,7 +4,7 @@ This directory contains the documentation of the SSH labs.
 
 The documentation is available on https://sshlabs.compass-security.training.
 
-[![Build and Publish Documentation](https://github.com/emanuelduss/ssh-labs/actions/workflows/docs.yml/badge.svg)](https://github.com/emanuelduss/ssh-labs/actions/workflows/docs.yml)
+[![Build and Publish Documentation](https://github.com/compasssecurity/ssh-labs/actions/workflows/docs.yml/badge.svg)](https://github.com/compasssecurity/ssh-labs/actions/workflows/docs.yml)
 
 You can build the static documentation site from the Markdown files yourself
 using Zensical.

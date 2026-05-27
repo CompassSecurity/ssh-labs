@@ -7,6 +7,9 @@ As a prerequisite, you need to have Docker installed on your system. See the off
 Download the SSH labs Docker compose file:
 
 ```{.bash .copy}
+mkdir /tmp/ssh-labs
+cd /tmp/ssh-labs
+
 curl -O https://raw.githubusercontent.com/CompassSecurity/ssh-labs/refs/heads/main/compose.yml
 ```
 
@@ -17,7 +20,7 @@ docker compose up
 ```
 
 
-Wait until the images are built and started.
+Wait until the images are downloaded and started.
 
 ## Accessing the Attacker's Machine
 
@@ -103,4 +106,8 @@ You are now ready to start the lab. Have fun!
 
 ## Stopping the Lab
 
-Press Ctrl-C in the terminal where you started the labs to stop it.
+Press Ctrl-C in the terminal where you started the labs to stop it or stop it using the `docker` command in the directory where you downloaded the `compose.ym` file:
+
+```bash
+docker compose down
+```
