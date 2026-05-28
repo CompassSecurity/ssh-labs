@@ -30,7 +30,7 @@ You can approach the SSH labs in several ways, depending on your experience, ava
 
 ### CTF
 
-If you already understand how SSH works, have watched the companion SSH video and have the time and motivation, you can attempt the labs in a [CTF-style format](02-ctf-style.html) without any guidance.
+If you already understand how SSH works, have watched the companion SSH video and have the time and motivation, you can attempt the labs in a CTF-style format without any guidance.
 
 Start by accessing the attacker machine. Your task is to retrieve the contents of `/flag.txt` from every Linux server on the network that is running an SSH service.
 
