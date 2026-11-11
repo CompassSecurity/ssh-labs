@@ -16,7 +16,7 @@ curl -O https://raw.githubusercontent.com/CompassSecurity/ssh-labs/refs/heads/ma
 Start the labs:
 
 ```
-docker compose up
+./start
 ```
 
 
@@ -106,8 +106,4 @@ You are now ready to start the lab. Have fun!
 
 ## Stopping the Lab
 
-Press Ctrl-C in the terminal where you started the labs to stop it or stop it using the `docker` command in the directory where you downloaded the `compose.yml` file:
-
-```bash
-docker compose down
-```
+Press Ctrl-C in the terminal where you started the labs to stop it.
