@@ -106,7 +106,7 @@ You are now ready to start the lab. Have fun!
 
 ## Stopping the Lab
 
-Press Ctrl-C in the terminal where you started the labs to stop it or stop it using the `docker` command in the directory where you downloaded the `compose.ym` file:
+Press Ctrl-C in the terminal where you started the labs to stop it or stop it using the `docker` command in the directory where you downloaded the `compose.yml` file:
 
 ```bash
 docker compose down
