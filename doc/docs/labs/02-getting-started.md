@@ -5,7 +5,7 @@
 As a prerequisite, you need to have Docker installed on your system. See the official Docker [install instructions](https://docs.docker.com/engine/install/). Example for Kali Linux:
 
 ```{.bash .copy}
-sudo apt install -y docker.io docker-compose
+sudo apt update && sudo apt install -y docker.io docker-compose
 ```
 
 Download the SSH labs Docker compose file:
