@@ -1,10 +1,11 @@
 # SSH Password Sniffing
+
 ## System Call Tracing
 
 Trace the `write` system call of the SSH server process `sshd`:
 
 ```shell-session
-root@linux-srv-02:~# sudo strace -p "$(pgrep -f /usr/sbin/sshd)" -f -e trace=write
+root@linux-srv-02:~# strace -p "$(pgrep -f /usr/sbin/sshd)" -f -e trace=write
 strace: Process 7 attached
 strace: Process 1474 attached
 [...]
