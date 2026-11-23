@@ -2,7 +2,11 @@
 
 ## Starting the Lab
 
-As a prerequisite, you need to have Docker installed on your system. See the official Docker [install instructions](https://docs.docker.com/engine/install/).
+As a prerequisite, you need to have Docker installed on your system. See the official Docker [install instructions](https://docs.docker.com/engine/install/). Example for Kali Linux:
+
+```bash
+sudo apt install -y docker.io docker-compose
+```
 
 Download the SSH labs Docker compose file:
 
@@ -15,8 +19,8 @@ curl -O https://raw.githubusercontent.com/CompassSecurity/ssh-labs/refs/heads/ma
 
 Start the labs:
 
-```
-./start
+```bash
+sudo docker compose up
 ```
 
 
