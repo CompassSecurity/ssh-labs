@@ -4,7 +4,7 @@
 
 As a prerequisite, you need to have Docker installed on your system. See the official Docker [install instructions](https://docs.docker.com/engine/install/). Example for Kali Linux:
 
-```bash
+```{.bash .copy}
 sudo apt install -y docker.io docker-compose
 ```
 
@@ -19,7 +19,7 @@ curl -O https://raw.githubusercontent.com/CompassSecurity/ssh-labs/refs/heads/ma
 
 Start the labs:
 
-```bash
+```{.bash .copy}
 sudo docker compose up
 ```
 
